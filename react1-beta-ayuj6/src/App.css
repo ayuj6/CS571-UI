@@ -1,0 +1,134 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+select {
+	background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+) no-repeat 95% 50%;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	height: 30px;
+	width: 100px;
+	padding: 5px;
+}
+
+#head{
+  width: 100%;
+  height: 100%;
+}
+
+#acc{
+  border-style: solid;
+  border-bottom: 0.5;
+  border-color: black;
+  background-color:lightgrey;
+}
+
+#cartView{
+  background-color: red;
+}
+
+#card_title{
+  text-align: center;
+  text-decoration: underline;
+  color:white;
+  text-decoration-color: white;
+  padding-bottom: 20px;
+  font-size: 23px;
+}
+
+#behind{
+  background-color: blue;
+}
+
+#to{
+  color: white;
+}
+
+#search_filter{
+  background-color: blue;
+}
+
+#lab{
+  color: white;
+  font-weight: bold;
+  font-size: large;
+}
+
+select.form-control {
+  padding: 0;
+  height: 39px;
+}
+
+#filter_form{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#pg_head{
+  border: 3px solid black;
+  background-color:firebrick;
+  color: white;
+}
+#pg_head h1{
+  text-align: center;
+  position: relative;
+}
+
+#sec{
+  font-weight: bold;
+}
+
+#subsec{
+  font-weight: bold;
+}
+
+.accordion-button:not(.active){
+  background-color:darksalmon;
+  color:black;
+}
+.accordion-button:not(.collapsed) {
+  color: #FFF  !important;
+  background-color: red !important;
+}
+
+.accordion-button:hover, .accordion-button:active  {
+  background-color: red !important;
+    color:#FFF !important;
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  box-shadow: 0 0 0 .25rem #FFF !important;
+}
