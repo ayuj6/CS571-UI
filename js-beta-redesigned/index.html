@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+<main role="main">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="Badger Bank">
+		<meta name="author" content="Ayuj Prasad">
+		<title>JavaScript Beta: Badger Shop Redesgined</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+			integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+		<link rel="stylesheet" href="styles.css">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				var tabList = [].slice.call(document.querySelectorAll("#myTab a"));
+				tabList.forEach(function (tab) {
+					var tabTrigger = new bootstrap.Tab(tab);
+
+					tab.addEventListener("click", function (event) {
+						event.preventDefault();
+						tabTrigger.show();
+					});
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<div id="top">
+			<img src="logo.png" height="120px" width="auto">
+		</div>
+
+		<div class="m-4">
+			<ul class="nav nav-pills" id="myTab">
+				<li class="nav-item">
+					<a href="#home" class="nav-link active">Home</a>
+				</li>
+				<li class="nav-item">
+					<a href="#orders" class="nav-link">Orders and Subscriptions</a>
+				</li>
+				<li class="nav-item">
+					<a href="#profile" class="nav-link">Profile</a>
+				</li>
+			</ul>
+			<form id="myForm">
+				<button type="submit" formaction='javascript:logout();' style="margin-bottom: 10px">Logout</button>
+			</form>
+
+			<br>
+
+			<div class="tab-content">
+				<div class="tab-pane fade show active" id="home">
+					<h1>Badger Shop</h1>
+					<br>
+					<div id="section1">
+						<h2>Welcome!</h2>
+						<p>Welcome to Badger Shop! We are dedicated to bringing our customers the lowest prices on
+							quality
+							products.</p>
+					</div>
+					<br>
+					<br>
+					<br>
+					<div id="section2">
+						<h2>Flash Sale!</h2>
+						<p name="flashSale">5lbs of brazil nuts for just $9.99 today — we badgers love 'em!</p>
+					</div>
+					<br>
+					<br>
+					<br>
+				</div>
+
+
+				<div class="tab-pane fade" id="orders">
+
+					<h1>Your Orders and Subscriptions</h1>
+					<br>
+
+
+
+					<div id="order1">
+						<h3>Order #0616803</h3>
+						<p>Order Placed: 2021-09-03T12:45:55.622Z | Total: 66.79</p>
+
+						<p>
+							<button id="btn1" class="btn btn-primary" type="button" data-bs-toggle="collapse"
+								data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+								View this order
+							</button>
+						</p>
+
+						<div class="collapse" id="collapseOne">
+							<div class="card card-body">
+								<table class="table table-striped" style="margin-bottom: 10px">
+									<thead>
+										<tr>
+											<th>Brand</th>
+											<th>Product</th>
+											<th>Quantity</th>
+											<th>Price</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Badger Foods</td>
+											<td>Frozen Margherita Pizza, 10oz</td>
+											<td>1</td>
+											<td>3.99</td>
+										</tr>
+										<tr>
+											<td>Badger Foods</td>
+											<td>Madras Curry Sauce, 12.5oz</td>
+											<td>6</td>
+											<td>3.69</td>
+										</tr>
+										<tr>
+											<td>Bucky's Deli</td>
+											<td>Meatball Banh Mi</td>
+											<td>1</td>
+											<td>6.50</td>
+										</tr>
+										<tr>
+											<td>New Bublr</td>
+											<td>Pomegranate Kombucha, 16fl oz</td>
+											<td>1</td>
+											<td>3.69</td>
+										</tr>
+										<tr>
+											<td>New Bublr</td>
+											<td>Spotted Cat Beer (6-pack)</td>
+											<td>2</td>
+											<td>12.99</td>
+										</tr>
+										<tr>
+											<td>Bucky's Deli</td>
+											<td>Fried Cheese Curds</td>
+											<td>1</td>
+											<td>4.49</td>
+										</tr>
+									</tbody>
+								</table>
+
+							</div>
+						</div>
+					</div>
+					<br>
+
+					<div id='order2'>
+						<h3>Order #9033042</h3>
+						<p>Order Placed: 2021-09-16T06:48:57.633Z | Total: 211.29</p>
+						<p>
+							<button id="btn2" class="btn btn-primary" type="button" data-bs-toggle="collapse"
+								data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								View this order
+							</button>
+						</p>
+						<div class="collapse" id="collapseTwo">
+							<div class="card card-body">
+								<table class="table table-striped" style="margin-bottom: 10px">
+									<thead>
+										<tr>
+											<th>Brand</th>
+											<th>Product</th>
+											<th>Quantity</th>
+											<th>Price</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Boutique de Madison</td>
+											<td>High-Rise Skinny Jean (Vintage Blue)</td>
+											<td>1</td>
+											<td>50.00</td>
+										</tr>
+										<tr>
+											<td>Boutique de Madison</td>
+											<td>Lightweight French Terry Crew (Black)</td>
+											<td>1</td>
+											<td>38.99</td>
+										</tr>
+										<tr>
+											<td>Buckylemon</td>
+											<td>Performance Shorts</td>
+											<td>2</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Bucky Outfitters</td>
+											<td>Stainless Keyring</td>
+											<td>1</td>
+											<td>9.49</td>
+										</tr>
+										<tr>
+											<td>StudyBucky</td>
+											<td>1-Subject Notebook (2-pack)</td>
+											<td>3</td>
+											<td>8.95</td>
+										</tr>
+										<tr>
+											<td>StudyBucky</td>
+											<td>Gel Pen (Medium Point, 6-pack)</td>
+											<td>2</td>
+											<td>12.99</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+
+					<br>
+					<form method="get" target="_blank" action="./account_info/order_history_report.pdf">
+						<button type="submit" style="margin-bottom: 10px">Download Order History</button>
+					</form>
+					<br>
+					<br>
+
+					<div id="subs">
+						<h3>Manage Your Subscriptions</h3>
+						<p>You are currently subscribed to 5 subscriptions | Next Automatic Payment:
+							2021-10-23T00:00:00.000Z</p>
+						<p>
+							<button id="btn3" class="btn btn-primary" type="button" data-bs-toggle="collapse"
+								data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								View Subscriptions
+							</button>
+						</p>
+						<div class="collapse" id="collapseThree">
+							<div class="card card-body">
+								<table class="table table-striped" style="margin-bottom: 10px">
+									<thead>
+										<tr>
+											<th>Service</th>
+											<th>Description</th>
+											<th>Price</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Badger Tunes</td>
+											<td>Unlimited music streaming</td>
+											<td>5.99</td>
+										</tr>
+										<tr>
+											<td>BadgerFlix</td>
+											<td>HD-quality video streaming</td>
+											<td>12.49</td>
+										</tr>
+										<tr>
+											<td>Badger Prime</td>
+											<td>Free same-day delivery of grocery items</td>
+											<td>9.99</td>
+										</tr>
+										<tr>
+											<td>Bucky's Cheese Club</td>
+											<td>Monthly delivered, curated cheeses from Wisconsin</td>
+											<td>30.00</td>
+										</tr>
+										<tr>
+											<td>Holy Cow</td>
+											<td>$10 ice cream vouchers every week</td>
+											<td>7.99</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+
+					<br>
+					<form method="get" target="_blank" action="./account_info/subscription_invoice.pdf">
+						<button type="submit" style="margin-bottom: 10px">Download Subscription Invoice</button>
+					</form>
+				</div>
+
+
+				<div class="tab-pane fade" id="profile">
+
+					<h2>Your Account</h2>
+					<div id="account">
+						<p>Name: Badger</p>
+						<p>Email: badger@wisc.com</p>
+						<p>Phone Number: (555)-555-1234</p>
+						<p id="membershipSubscription">Subscribed to membership services: true</p>
+					</div>
+					<form>
+						<button id="btn4" type="submit" formaction='javascript:toggleMembershipSubscription();'
+							style="margin-top: 10px">Subscribe/Unsubscribe</button>
+					</form>
+
+					<br>
+					<br>
+
+					<h2>Your Family Plan Members</h2>
+					<div id="famPlan">
+						<table id="famTable" class="table table-striped" style="margin-bottom: 10px">
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Email</th>
+								</tr>
+							</thead>
+							<tr>
+								<td>Goldy Golpher</td>
+								<td>goldy.gopher@example.com</td>
+							</tr>
+							<tr>
+								<td>Pioneer Pete</td>
+								<td>pioneer.pete@example.com</td>
+							</tr>
+							<tbody>
+
+							</tbody>
+						</table>
+					</div>
+
+					<div class="m-4">
+						<h5>Add a Family Member to your plan</h5>
+						<form action="javascript:addFamilyMember();" method="post">
+							<div class="row align-items-center g-3">
+								<div class="col-md-auto col-12">
+									<label class="form-label d-md-none" for="inputName">Full Name</label>
+									<input type="name" class="form-control" id="inputName"
+										placeholder="Enter Member's Name" required>
+								</div>
+								<div class="col-md-auto col-12">
+									<label class="form-label d-md-none" for="inputEmail">Email</label>
+									<input type="email" class="form-control" id="inputEmail" placeholder="Enter Email"
+										required>
+								</div>
+								<div class="col-md-auto col-12">
+									<button id="btn6" type="submit" class="btn btn-primary">Add Member</button>
+								</div>
+							</div>
+						</form>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+
+
+		<br>
+		<br>
+
+
+		<div class="footer">
+			<h2>Contact Us</h2>
+			<p>Have a question?</p>
+			<p>Contact us at (444)-444-4321</p>
+			<p>or email: badgershop@wisc.com</p>
+		</div>
+</main>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+	integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+
+</html>

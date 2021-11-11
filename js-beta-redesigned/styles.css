@@ -1,0 +1,98 @@
+body {
+    font-family:sans-serif;
+  }
+
+#top{
+    border-bottom: 1px solid;
+    background-color: #ff0000;
+    text-align: center;
+    
+}
+
+.footer {
+    left: 0;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+  
+
+#myForm{
+    text-align: right;
+    font-size: larger;
+}
+
+
+#myTab{
+    justify-content: center;
+}
+
+#myTab a{
+    color: maroon;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color:crimson;
+}
+
+#myTab .nav-link.active {
+    color:white;
+  
+}
+
+
+
+#orders h2,h3,p,form{
+    text-align: center;
+}
+
+#orders h1{
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#home h1{
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#home h2,h3{
+    text-align:center;
+}
+
+button{
+    background-color:darkred;
+    color: white
+}
+
+#btn1, #btn2, #btn3, #btn4, #btn5, #btn6{
+    background-color: #ff0000;
+    border-color: red;
+}
+
+#profile{
+    justify-content: center;
+}
+
+#profile h2{
+    text-align: center;
+}
+
+#order1, #order2, #subs, #section1, #section2, #account, #famPlan{
+    border: 3px solid;
+}
+
+
+th {
+    padding: 5px 5px 5px 5px;
+}
+
+td {
+    padding: 5px 5px 5px 5px;
+}
