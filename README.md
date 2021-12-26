@@ -1,1 +1,1 @@
-# CS571-Assignments
+# CS571 (User Interfaces) - Projects
